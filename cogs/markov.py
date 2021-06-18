@@ -28,7 +28,7 @@ class Ingestor(commands.Cog):
         if ctx.author.id != self._owner_id:
             return
 
-        await ctx.reply('<a:loading:755494890070081656> Ingesting messages from ' + ch.name)
+        await ctx.reply(f'<a:loading:755494890070081656> Ingesting messages from {ch.name}')
 
         count = 0
         async for msg in ch.history(limit=None).filter(lambda m: not m.author.bot):
