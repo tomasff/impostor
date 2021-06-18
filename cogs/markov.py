@@ -1,4 +1,3 @@
-
 import random
 
 from discord import Message, TextChannel
